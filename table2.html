@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            background-color: rgb(194, 193, 193);
+            width: 100%;
+            padding: 0.5%;
+            text-align: center;
+        }
+
+        section {
+            float: left;
+            width: 69%;
+            background-color: aquamarine;
+            text-align: center;
+        }
+
+        aside {
+            float: right;
+            width: 30%;
+            height: 150px;
+            background-color: rgb(161, 161, 194);
+            text-align: center;
+        }
+
+        .article {
+            background-color: yellow;
+            display: flex;
+            width: 66%;
+            padding: 20px;
+            margin: 10px;
+            flex-wrap: wrap;
+            text-align: center;
+
+        }
+
+        .footer {
+            display: flex;
+            background-color: rgb(194, 193, 193);
+            width: 100%;
+            padding: 0.5%;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        .footersection {
+            background-color: white;
+            width: 25%;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">[Шапка страницы]</header>
+
+    <main>
+        <section>
+            <p>[Основная часть]</p>
+        </section>
+
+        <aside class="aside">
+            <p>[Боковая часть]</p>
+        </aside>
+        <article>
+            <div>
+                <div class="article">[Еще 1]</div>
+                <div class="article">[Еще 2]</div>
+                <div class="article">[Еще 3]</div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+
+        <div class="footersection">[Секция футера 1]</div>
+        <div class="footersection">[Секция футера 2]</div>
+        <div class="footersection">[Секция футера 3]</div>
+        <div class="footersection">[Секция футера 4]</div>
+
+    </footer>
+</body>
+
+</html>
