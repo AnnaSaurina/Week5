@@ -17,27 +17,39 @@
         section {
             float: left;
             width: 69%;
-            background-color: aquamarine;
+            background-color: rgb(222, 230, 182);
             text-align: center;
         }
 
         aside {
             float: right;
             width: 30%;
-            height: 150px;
-            background-color: rgb(161, 161, 194);
+            height: 205px;
+            background-color: rgb(200, 214, 162);
             text-align: center;
         }
 
-        .article {
-            background-color: yellow;
-            display: flex;
-            width: 66%;
+        .article1,
+        .article2 {
+            background-color: rgb(240, 211, 85);
+            display: inline-block;
+            width: 43%;
             padding: 20px;
             margin: 10px;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             text-align: center;
+            flex-direction: row;
+            justify-content: space-between;
 
+        }
+
+        .article3 {
+            background-color: rgb(240, 211, 85);
+            display: block;
+            width: 94%;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
         }
 
         .footer {
@@ -65,18 +77,19 @@
     <main>
         <section>
             <p>[Основная часть]</p>
+            <article>
+                <div>
+                    <div class="article1">[Еще 1]</div>
+                    <div class="article2">[Еще 2]</div>
+                    <div class="article3">[Еще 3]</div>
+                </div>
+            </article>
         </section>
 
         <aside class="aside">
             <p>[Боковая часть]</p>
         </aside>
-        <article>
-            <div>
-                <div class="article">[Еще 1]</div>
-                <div class="article">[Еще 2]</div>
-                <div class="article">[Еще 3]</div>
-            </div>
-        </article>
+
     </main>
 
     <footer class="footer">
